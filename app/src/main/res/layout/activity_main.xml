@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/ohm"
+        android:layout_width="111dp"
+        android:layout_height="28dp"
+        android:text="Calculo de Ohm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.366" />
+
+    <EditText
+        android:id="@+id/voltagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/ohm"
+        android:inputType="number"
+        android:hint="Valor de Voltagem"
+        android:minHeight="48dp"/>
+
+    <EditText
+        android:id="@+id/resistencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Valor de Resistencia"
+        app:layout_constraintTop_toBottomOf="@+id/voltagem"
+        android:minHeight="48dp"/>
+
+    <EditText
+        android:id="@+id/corrente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Valor de Corrente"
+        app:layout_constraintTop_toBottomOf="@+id/resistencia"
+        android:minHeight="48dp"/>
+
+    <Button
+        android:id="@+id/cal_voltagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:text="Voltagem"
+        app:layout_constraintTop_toBottomOf="@+id/voltagem"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/cal_resistencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="168dp"
+        android:text="Resistencia"
+        app:layout_constraintTop_toBottomOf="@+id/resistencia"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/cal_corrente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="204dp"
+        android:text="Corrente"
+        app:layout_constraintTop_toBottomOf="@+id/corrente"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
